@@ -1,6 +1,6 @@
 # Métodos de arrays
 
-Los arrays proporcionan muchos métodos. Para facilitar las cosas, en este capítulo, se dividen en grupos.
+Los arrays proporcionan muchos métodos. Para facilitar las cosas, lo dividremos en grupos.
 
 ## Añadir/eliminar elementos
 
