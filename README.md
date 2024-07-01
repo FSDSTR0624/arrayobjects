@@ -220,6 +220,7 @@ alert(arr); // ["I", "study", "complex", "language", "JavaScript"]
 ```
 
 ### slice
+
 El método `arr.slice` es mucho más simple que el similar `arr.splice`.
 
 La sintaxis es:
@@ -243,6 +244,7 @@ alert(arr.slice(-2)); // s,t (copia desde -2 hasta el final)
 También podemos llamarlo sin argumentos: `arr.slice()` crea una copia de `arr`. Eso se usa a menudo para obtener una copia para futuras transformaciones que no deberían afectar al array original.
 
 ### concat
+
 El método `arr.concat` crea un nuevo array que incluye valores de otros arrays y elementos adicionales.
 
 La sintaxis es:
