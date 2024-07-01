@@ -173,7 +173,7 @@ Eso es natural, porque `delete obj.key` elimina un valor por la `key`. Eso es to
 
 Entonces, se deben usar métodos especiales.
 
-El método arr.splice es una navaja suiza para arrays. Puede hacer de todo: insertar, eliminar y reemplazar elementos.
+El método `arr.splice` es una navaja suiza para arrays. Puede hacer de todo: insertar, eliminar y reemplazar elementos.
 
 La sintaxis es:
 
