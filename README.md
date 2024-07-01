@@ -49,6 +49,7 @@ alert(frutas.at(-1)); // Ciruela
 ## Métodos pop/push, shift/unshift
 
 ### pop
+
 Elimina el último elemento del array y lo devuelve:
 
 ```javascript
@@ -58,6 +59,7 @@ alert(frutas); // Manzana, Naranja
 ```
 
 ### push
+
 Añade un elemento al final del array:
 
 ```javascript
@@ -67,6 +69,7 @@ alert(frutas); // Manzana, Naranja, Pera
 ```
 
 ### shift
+
 Elimina el primer elemento del array y lo devuelve:
 
 ```javascript
@@ -76,6 +79,7 @@ alert(frutas); // Naranja, Pera
 ```
 
 ### unshift
+
 Añade un elemento al principio del array:
 
 ```javascript
