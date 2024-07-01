@@ -14,7 +14,7 @@
 
 // concatenate arrays (concat)
 
-// search in an array (indexOf / lastIndexOf / includes)
+// search in an array (indexOf / lastIndexOf / includes / some)
 
 // display every element of an array (forEach)
 
