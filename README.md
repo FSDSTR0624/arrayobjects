@@ -1,4 +1,140 @@
-# Métodos de arrays
+# Arrays
+
+## Declaración
+
+Hay dos sintaxis para crear un array vacío:
+
+```javascript
+let arr = new Array();
+let arr = [];
+```
+
+Usualmente se utiliza la segunda sintaxis. Podemos proporcionar elementos iniciales entre los corchetes:
+
+```javascript
+let frutas = ["Manzana", "Naranja", "Ciruela"];
+```
+
+Los elementos del array están numerados, comenzando desde cero. Podemos acceder a un elemento por su número usando corchetes:
+
+```javascript
+let frutas = ["Manzana", "Naranja", "Ciruela"];
+alert(frutas[0]); // Manzana
+alert(frutas[1]); // Naranja
+alert(frutas[2]); // Ciruela
+```
+
+Podemos reemplazar un elemento o añadir uno nuevo:
+
+```javascript
+frutas[2] = "Pera"; // ahora ["Manzana", "Naranja", "Pera"]
+frutas[3] = "Limón"; // ahora ["Manzana", "Naranja", "Pera", "Limón"]
+```
+
+La cantidad total de elementos en el array es su `length`:
+
+```javascript
+let frutas = ["Manzana", "Naranja", "Ciruela"];
+alert(frutas.length); // 3
+```
+
+Obtener últimos elementos con "at"
+Podemos obtener el último elemento del array usando índices negativos con el método `at`:
+
+```javascript
+let frutas = ["Manzana", "Naranja", "Ciruela"];
+alert(frutas.at(-1)); // Ciruela
+```
+
+## Métodos pop/push, shift/unshift
+
+### pop
+Elimina el último elemento del array y lo devuelve:
+
+```javascript
+let frutas = ["Manzana", "Naranja", "Pera"];
+alert(frutas.pop()); // Pera
+alert(frutas); // Manzana, Naranja
+```
+
+### push
+Añade un elemento al final del array:
+
+```javascript
+let frutas = ["Manzana", "Naranja"];
+frutas.push("Pera");
+alert(frutas); // Manzana, Naranja, Pera
+```
+
+### shift
+Elimina el primer elemento del array y lo devuelve:
+
+```javascript
+let frutas = ["Manzana", "Naranja", "Pera"];
+alert(frutas.shift()); // Manzana
+alert(frutas); // Naranja, Pera
+```
+
+### unshift
+Añade un elemento al principio del array:
+
+```javascript
+let frutas = ["Naranja", "Pera"];
+frutas.unshift("Manzana");
+alert(frutas); // Manzana, Naranja, Pera
+```
+
+## Bucles
+
+Podemos iterar sobre los elementos del array usando un bucle `for`:
+
+```javascript
+let arr = ["Manzana", "Naranja", "Pera"];
+for (let i = 0; i < arr.length; i++) {
+  alert(arr[i]);
+}
+```
+
+O usando `for..of`:
+
+```javascript
+let frutas = ["Manzana", "Naranja", "Ciruela"];
+for (let fruta of frutas) {
+  alert(fruta);
+}
+```
+
+## Propiedad length
+
+La propiedad `length` del array se actualiza automáticamente cuando modificamos el array. Si reducimos `length`, el array se trunca:
+
+```javascript
+let arr = [1, 2, 3, 4, 5];
+arr.length = 2; // truncar a 2 elementos
+alert(arr); // [1, 2]
+```
+
+## Arrays multidimensionales
+
+Los arrays pueden contener otros arrays. Se pueden usar para almacenar matrices:
+
+```javascript
+let matriz = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+alert(matriz[1][1]); // 5
+```
+
+## toString
+
+Los arrays tienen su propia implementación del método `toString` que devuelve una lista de elementos separados por comas:
+
+```javascript
+let arr = [1, 2, 3];
+alert(arr); // 1,2,3
+```
 
 Los arrays proporcionan muchos métodos. Para facilitar las cosas, lo dividremos en grupos.
 
