@@ -48,7 +48,7 @@ alert(frutas.at(-1)); // Ciruela
 
 ## Métodos pop/push, shift/unshift
 
-### pop
+### pop
 
 Elimina el último elemento del array y lo devuelve:
 
@@ -58,7 +58,7 @@ alert(frutas.pop()); // Pera
 alert(frutas); // Manzana, Naranja
 ```
 
-### push
+### push
 
 Añade un elemento al final del array:
 
@@ -68,7 +68,7 @@ frutas.push("Pera");
 alert(frutas); // Manzana, Naranja, Pera
 ```
 
-### shift
+### shift
 
 Elimina el primer elemento del array y lo devuelve:
 
@@ -78,7 +78,7 @@ alert(frutas.shift()); // Manzana
 alert(frutas); // Naranja, Pera
 ```
 
-### unshift
+### unshift
 
 Añade un elemento al principio del array:
 
@@ -219,7 +219,7 @@ arr.splice(2, 0, "complex", "language"); // desde el índice 2 elimina 0 e inser
 alert(arr); // ["I", "study", "complex", "language", "JavaScript"]
 ```
 
-### slice
+### slice
 
 El método `arr.slice` es mucho más simple que el similar `arr.splice`.
 
@@ -243,7 +243,7 @@ alert(arr.slice(-2)); // s,t (copia desde -2 hasta el final)
 
 También podemos llamarlo sin argumentos: `arr.slice()` crea una copia de `arr`. Eso se usa a menudo para obtener una copia para futuras transformaciones que no deberían afectar al array original.
 
-### concat
+### concat
 
 El método `arr.concat` crea un nuevo array que incluye valores de otros arrays y elementos adicionales.
 
@@ -370,7 +370,8 @@ let user = users.find((item) => item.id == 1);
 alert(user.name); // John
 ```
 
-### filter
+### filter
+
 El método `arr.filter(fn)` devuelve un array con todos los elementos que cumplen `fn`.
 
 Por ejemplo:
@@ -388,7 +389,9 @@ alert(someUsers.length); // 2
 ```
 
 ## Transformar un array
-### map
+
+### map
+
 El método `arr.map(fn)` crea un nuevo array con los resultados de aplicar `fn` a cada elemento.
 
 Por ejemplo:
@@ -410,7 +413,8 @@ arr.sort();
 alert(arr); // 1, 15, 2
 ```
 
-### reverse
+### reverse
+
 El método `arr.reverse()` invierte el orden de los elementos del array y devuelve el array invertido.
 
 Por ejemplo:
@@ -450,7 +454,8 @@ let result = arr.reduce((sum, current) => sum + current, 0);
 alert(result); // 15
 ```
 
-## Array.isArray
+## Array.isArray
+
 El método `Array.isArray(value)` devuelve `true` si `value` es un array.
 
 Por ejemplo:
