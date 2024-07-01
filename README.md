@@ -388,7 +388,7 @@ let someUsers = users.filter((item) => item.id < 3);
 alert(someUsers.length); // 2
 ```
 
-## Transformar un array
+## Transformar un array
 
 ### map
 
