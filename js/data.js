@@ -17,7 +17,7 @@ cities = [
   "Übelbach",
   "Älpl",
   "Vienna",
-  "Graz",
+  "graz",
   "Linz",
   "Salzburg",
   "Innsbruck",
